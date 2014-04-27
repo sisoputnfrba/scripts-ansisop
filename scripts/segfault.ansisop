@@ -1,0 +1,9 @@
+#!/usr/bin/ansisop
+begin
+#un vector de 5 posiciones
+variables a
+	#Imprimi 30 lugares despues de donde se definio a
+	print *&a+30
+end
+
+
