@@ -1,20 +1,23 @@
 #!/usr/bin/ansisop
+#Overflow en el numero 3*4 + 5 % 300 = 16
 begin
-	f
+	f 0
 end
 
 function f
 	variables a
-	a=1
+	io HDD1 5
+	a=$0+1
 	print a
-	g
+	g a
 end
 
 function g
 	variables a
-	a=0
+	io HDD1 1
+	a=$0+1
 	print a
-	f
+	f a
 end
 
 
