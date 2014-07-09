@@ -4,9 +4,12 @@ variables f, i, t
 
 	#`f`: Hasta donde contar
 	f=20
+	#`i`: Iterador
+	i=0
+	
 	:inicio
 
-	#`i`: Iterador
+	#Iterar
 	i=i+1
 	
 	#Imprimir el contador
