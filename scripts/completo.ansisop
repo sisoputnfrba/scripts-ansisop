@@ -2,10 +2,6 @@
 
 #Respuesta esperada: 1; 1; Hola Mundo!; 3; Bye
 
-function imprimir
-        print $0+1
-end
-
 begin
 variables f,  A,  g
     A = 	0
@@ -20,16 +16,13 @@ variables f,  A,  g
 
     textPrint    Hola Mundo!
     
-    sumar1 &g		
+    *&g = 1 + g
     print 		g    
     
-    sinParam
+    textPrint Bye
     
 end
 
-function sinParam
-	textPrint Bye
-end
 
 #Devolver el doble del
 #primer parametro
@@ -39,12 +32,8 @@ variables f
     return f
 end
 
-function sumar1
-	*$0 = 1 + *$0
-end
-
 :Siguiente	
-    imprimir A
+	print A+1
 goto Proximo
 
 
