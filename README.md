@@ -1,7 +1,7 @@
 Scripts Ansisop
 ===============
 
-En este repositorio acumularemos scripts de AnSISOP para probar los trabajos prácticos de Está CoverFlow.
+En este repositorio acumularemos scripts de AnSISOP para probar un trabajo practico de Sistemas Operativos (UTN - FRBA).
 
 Contribuir
 ----------
