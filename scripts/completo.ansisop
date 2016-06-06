@@ -16,7 +16,7 @@ variables f,  A,  g
 
     textPrint    Hola Mundo!
     
-    *&g = 1 + g
+    g = 1 + g
     print 		g    
     
     textPrint Bye
