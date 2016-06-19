@@ -1,7 +1,7 @@
 
 #!/usr/bin/ansisop
 
-#Respuesta esperada: 1; 1; Hola Mundo!; 3; Bye
+#Respuesta esperada: 1; 2000000; Hola Mundo!; 3; Bye
 
 function imprimir
         print $0 + 1
@@ -40,6 +40,7 @@ function sumar1
 	*$0 = 1 + *$0
 end
 
-:Siguiente	
+:Siguiente
+    A = 2000000
     imprimir A
 goto Proximo
