@@ -26,13 +26,6 @@ variables t
 end
 
 
-function swap
-variables x
-	x = *$0
-	*$0 = *$1
-	*$1 = x
-end
-
 function mod
 variables i, a, t
 	a=1
@@ -51,11 +44,15 @@ variables i, a, t
 end
 
 function mcd
-variables r
+variables r, x
 
 	#Sino divide por 0, y eso es malo
 	jnz $1 mcd-loop
-	swap &$0,&$1
+	
+	#Cambiar de lugar las dos variables
+	x = $0
+	$0 = $1
+	$1 = x
 
 :mcd-loop
 	r <- mod $0,$1
