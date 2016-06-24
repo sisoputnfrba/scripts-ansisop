@@ -10,6 +10,8 @@ variables a, b, c, d, e, i
 	:for
 	#imprime el valor iavo del vector
 	print *&a+i
+	#pongo en 0 el valor de la posicion para verificar escritura
+	*&a+i = 0
 	#avanzo en el vector (de a 4 posiciones, 1 int)
 	i=i+4
 	#Si i no es 20 (5 posiciones del vector * 4 temanio de las variables)
