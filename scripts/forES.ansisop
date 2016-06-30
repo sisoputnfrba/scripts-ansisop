@@ -5,6 +5,7 @@ begin
 variables f, i, t
 
 	#`f`: Hasta donde contar
+	i=0
 	f=20
 	:inicio
 
